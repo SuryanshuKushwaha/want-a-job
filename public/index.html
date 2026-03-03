@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Job Scraper</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Want a job</h1>
+      <p class="tagline">Search multiple job sites and save results</p>
+    </header>
+
+    <main class="container">
+      <form id="searchForm" class="search-form">
+      <label>Role<input name="role" placeholder="e.g. Software Engineer" /></label>
+      <label>Location<input name="location" placeholder="e.g. San Francisco, CA" /></label>
+      <label>Salary Range (min-max)<input name="salaryRange" placeholder="e.g. 70000-120000" /></label>
+      <label>Job Type
+        <select name="jobType">
+          <option value="">Any</option>
+          <option>full-time</option>
+          <option>part-time</option>
+          <option>contract</option>
+          <option>internship</option>
+        </select>
+      </label>
+      <label>Experience Level
+        <select name="experienceLevel">
+          <option value="">Any</option>
+          <option value="entry">Entry</option>
+          <option value="mid">Mid</option>
+          <option value="senior">Senior</option>
+        </select>
+      </label>
+
+      <label>Sites
+        <select name="sites">
+          <option value="all" selected>All</option>
+          <option value="https://internshala.com">Internshala</option>
+          <option value="https://www.naukri.com">Naukri</option>
+          <option value="https://www.linkedin.com/jobs">LinkedIn</option>
+          <option value="https://www.workindia.in">WorkIndia</option>
+        </select>
+      </label>
+
+      <!-- Removed sites input: scraper will default to configured sites when none provided -->
+
+        <button type="submit" class="btn-primary">Search</button>
+      </form>
+
+      <section class="results-area">
+        <h2>Results</h2>
+        <div id="results" class="results"></div>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

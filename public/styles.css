@@ -1,0 +1,47 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#94a3b8;
+  --accent:#6ee7b7;
+  --accent-2:#60a5fa;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,#071126 0%, #041024 100%);color:#e6eef8;margin:0;padding:24px;min-height:100vh}
+.container{max-width:980px;margin:0 auto}
+.site-header{text-align:center;margin-bottom:18px}
+.site-header h1{margin:0;font-size:28px;letter-spacing:0.4px}
+.tagline{margin:6px 0 0;color:var(--muted)}
+.search-form{background:rgba(255,255,255,0.03);padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.6);display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start}
+.search-form label{display:block;font-size:13px;color:var(--muted)}
+.search-form input,.search-form select,.search-form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+.search-form textarea{grid-column:1 / -1;height:80px}
+.search-form .btn-primary{grid-column:1 / -1;padding:12px;border-radius:10px;border:none;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#04202b;font-weight:700;cursor:pointer;box-shadow:0 6px 18px rgba(96,165,250,0.12);transition:transform .14s ease,box-shadow .14s ease}
+.search-form .btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(96,165,250,0.18)}
+
+.results-area{margin-top:18px}
+.results{display:flex;flex-direction:column;gap:10px;min-height:80px}
+.raw{background:#071420;padding:12px;border-radius:8px;overflow:auto;color:var(--muted);font-size:13px}
+
+.spinner{width:48px;height:48px;margin:18px auto;border-radius:50%;position:relative;border:5px solid rgba(255,255,255,0.06);border-top-color:var(--accent);animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.job-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.02);backdrop-filter: blur(6px);transform:translateY(8px);opacity:0;animation:cardIn .36s ease forwards}
+.job-card:hover{transform:translateY(0) scale(1.01);box-shadow:0 12px 30px rgba(2,6,23,0.6)}
+.job-title{display:block;font-weight:600;color:#e6f8ff;margin-bottom:6px;text-decoration:none}
+.job-meta{color:var(--muted);font-size:13px}
+.empty{color:var(--muted);padding:18px;text-align:center}
+.error{color:#ffd6d6;background:rgba(255,30,30,0.04);padding:12px;border-radius:8px}
+
+.job-link-btn{display:inline-block;margin-top:10px;padding:8px 12px;border-radius:8px;border:none;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#04202b;font-weight:700;cursor:pointer;box-shadow:0 6px 18px rgba(96,165,250,0.12);transition:transform .12s ease}
+.job-link-btn:hover{transform:translateY(-2px)}
+
+.job-site{display:inline-block;margin-left:8px;padding:2px 8px;border-radius:8px;background:rgba(255,255,255,0.03);color:var(--accent-2);font-weight:700;font-size:12px}
+
+@keyframes cardIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+
+@media (max-width:720px){
+  .search-form{grid-template-columns:1fr}
+}
+
+/* subtle focus for inputs */
+.search-form input:focus,.search-form textarea:focus,.search-form select:focus{outline:none;box-shadow:0 6px 20px rgba(96,165,250,0.08);border-color:rgba(96,165,250,0.18)}

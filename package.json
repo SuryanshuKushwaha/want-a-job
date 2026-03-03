@@ -1,0 +1,18 @@
+{
+  "name": "job-scraper",
+  "version": "0.1.0",
+  "description": "Modular Puppeteer job scraper with Express API and simple frontend",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "p-limit": "^4.0.0",
+    "puppeteer": "^24.36.0"
+  }
+}

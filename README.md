@@ -1,42 +1,89 @@
-# Job Scraper
+# Want A Job 🔍💼
 
-Simple modular Node.js job scraper using Puppeteer. The API accepts a JSON body with search parameters and an array of site URLs. Currently includes a scraper module for Indeed.
+A simple and modular **Node.js Job Scraper** built using **Puppeteer** that allows users to search and collect job listings from multiple websites using structured JSON input.
 
-## Install
+This project is useful for:
+- Automating job searches
+- Building job dashboards
+- Learning web scraping with Puppeteer
+- Backend API practice
 
-1. cd to project folder
-2. npm install
+---
 
-## Run
+## 🚀 Features
+
+- 🔎 Scrapes job listings dynamically
+- 📦 Modular structure (easy to add new job sites)
+- 📡 Accepts structured JSON search parameters
+- 🧩 Extendable architecture
+- ⚡ Lightweight and beginner-friendly
+
+---
+
+## 🛠 Tech Stack
+
+- Node.js
+- Express.js
+- Puppeteer
+- JavaScript
+
+---
+
+## 📥 Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/SuryanshuKushwaha/want-a-job.git
+
+Move into project directory:
+
+cd want-a-job
+
+Install dependencies:
+
+npm install
+▶️ Run the Project
+
+Start the server:
 
 npm start
 
-Then open http://localhost:3000 in your browser.
+Server will run on:
 
-## API
+http://localhost:3000
+📡 API Usage
 
-POST /api/search
+🧩 How to Add a New Job Site
 
-Body JSON:
-{
-  "role": "Software Engineer",
-  "location": "San Francisco, CA",
-  "salaryRange": "70000-120000",
-  "jobType": "full-time",
-  "experienceLevel": "mid",
-  "sites": ["https://www.indeed.com"]
-}
+Create a new file inside src/sites/
 
-Response:
-{
-  "results": [ { title, company, location, link }, ... ],
-  "siteErrors": [ ... ]
-}
+Export two functions:
 
-## Extending
+buildSearchUrl(params)
+async scrape(page, siteUrl, params)
 
-Add new modules under `src/sites`. Each module should export `buildSearchUrl(params)` and `async scrape(page, siteUrl, params)` returning an array of items `{title, company, location, link}`. Update `SITE_MODULES` in `src/scraper.js` to map host substrings to your module file.
+Add it inside SITE_MODULES in src/scraper.js
 
-## Notes
-- Puppeteer may download a Chromium binary during `npm install` — allow time and disk space.
-- Real sites may have anti-scraping measures; use responsibly and follow each site's terms of service.
+📁 Project Structure
+want-a-job/
+│
+├── src/
+│   ├── sites/
+│   └── scraper.js
+│
+├── public/
+├── data/
+├── package.json
+└── README.md
+⚠️ Important Notes
+
+Puppeteer downloads Chromium during installation.
+
+Some websites may block automated scraping.
+
+Always follow website terms & conditions before scraping.
+
+👨‍💻 Author
+
+Suryanshu Kushwaha

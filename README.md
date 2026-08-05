@@ -40,3 +40,17 @@ Add new modules under `src/sites`. Each module should export `buildSearchUrl(par
 ## Notes
 - Puppeteer may download a Chromium binary during `npm install` — allow time and disk space.
 - Real sites may have anti-scraping measures; use responsibly and follow each site's terms of service.
+
+## Deploying to Render (Docker)
+
+This project can be deployed to Render using the included `Dockerfile`, which installs system Chromium and runs the Node server. Basic steps:
+
+1. Push this repository to GitHub.
+2. In Render, create a new **Web Service** and connect your GitHub repo.
+3. Choose **Docker** as the environment (Render will detect the `Dockerfile`).
+4. Set the start command to: `node src/index.js` (the Docker image already runs that by default).
+5. Ensure the service exposes port `3000` (Render maps automatically).
+
+Notes:
+- The Docker image installs a system Chromium and sets `PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium` so Puppeteer uses the system binary.
+- Running live scrapes may require increased service resources; consider the Render plan accordingly.

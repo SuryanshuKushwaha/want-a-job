@@ -172,7 +172,12 @@ async function scrape(params) {
   if (!sites.length) {
     return { results: [], siteErrors: [{ error: 'No allowed sites selected. Allowed hosts: ' + ALLOWED_HOST_KEYS.join(', '), rejected }], savedFile: null };
   }
-  const browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+  const launchOpts = {
+    headless: true,
+    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+  };
+  if (process.env.PUPPETEER_EXECUTABLE_PATH) launchOpts.executablePath = process.env.PUPPETEER_EXECUTABLE_PATH;
+  const browser = await puppeteer.launch(launchOpts);
 
   // simple concurrency pool (avoid p-limit ESM warnings)
   const concurrency = 3;

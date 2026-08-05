@@ -1,0 +1,1203 @@
+{
+  "params": {
+    "role": "software developer",
+    "location": "Noida",
+    "salaryRange": "",
+    "jobType": "full-time",
+    "experienceLevel": "entry",
+    "sites": [
+      "https://internshala.com"
+    ]
+  },
+  "results": [
+    {
+      "title": "Login with Google",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/login/get_google/student"
+    },
+    {
+      "title": "Forgot password?",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/login/forgot_password"
+    },
+    {
+      "title": "Student",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/registration/student"
+    },
+    {
+      "title": "Company",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/employer"
+    },
+    {
+      "title": "rules",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/terms"
+    },
+    {
+      "title": "complaints@internshala.com",
+      "company": null,
+      "location": null,
+      "link": "mailto:complaints@internshala.com"
+    },
+    {
+      "title": "Home",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/"
+    },
+    {
+      "title": "Internships",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships"
+    },
+    {
+      "title": "Jobs",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs"
+    },
+    {
+      "title": "Courses\n                                                            \n                                    OFFER",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/?utm_source=is_web_internshala_ham"
+    },
+    {
+      "title": "Placement Courses",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/?utm_source=is_web_hamburger#career-launchpad-courses"
+    },
+    {
+      "title": "Online Degrees",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/onlinedegrees?utm_source=is_web_hamburger"
+    },
+    {
+      "title": "Study Abroad",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/study_abroad?utm_source=is_web_hamburger"
+    },
+    {
+      "title": "Contact Us",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/contact"
+    },
+    {
+      "title": "Register - As a Student",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/registration/student"
+    },
+    {
+      "title": "Register - As an Employer",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/employer"
+    },
+    {
+      "title": "Register",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/registration/student"
+    },
+    {
+      "title": "Internships",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/?utm_source=is_header"
+    },
+    {
+      "title": "Work from Home",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/work-from-home-internships/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Internship in Bangalore",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/internship-in-bangalore/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Internship in Delhi",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/internship-in-delhi/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Internship in Hyderabad",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/internship-in-hyderabad/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Internship in Mumbai",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/internship-in-mumbai/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Internship in Chennai",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/internship-in-chennai/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Internship in Pune",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/internship-in-pune/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Internship in Kolkata",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/internship-in-kolkata/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Internship in Jaipur",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/internship-in-jaipur/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "International Internship",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/international-internship/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "View all internships",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Computer Science Internship",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/computer-science-internship/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Marketing Internship",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/marketing-internship/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Finance Internship",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/finance-internship/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Graphic Design Internship",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/graphic-design-internship/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Architecture Internship",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/architecture-internship/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Mechanical Internship",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/mechanical-internship/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "HR Internship",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/hr-internship/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Digital Marketing Internship",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/digital-marketing-internship/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Law Internship",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/law-internship/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Electronics Internship",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/electronics-internship/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Content Writing Internship",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/content-writing-internship/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Civil Internship",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/civil-internship/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Campus Ambassador Program",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/campus-ambassador-internship/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "View all internships",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Engineering Internship",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/engineering-internship/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Business/MBA Internship",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/mba-internship/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Humanities Internship",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/humanities-internship/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Science Internship",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/science-internship/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Internships with Job Offer",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/ppo-true/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Part-Time Jobs/Internships",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/part-time-jobs/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Internships for Women",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships-for-women/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "View all internships",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Internships by Category",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships-by-category/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Internships by Location",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships-by-location/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Internships by Company",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/internships-at-company/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Web Development Course Course",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/web-developer-launchpad?utm_source=is_web_internship-menu-dropdown"
+    },
+    {
+      "title": "Data Science Course Course",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/data-science-launchpad?utm_source=is_web_internship-menu-dropdown"
+    },
+    {
+      "title": "Digital Marketing Course Course",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/digital-marketing-launchpad?utm_source=is_web_internship-menu-dropdown"
+    },
+    {
+      "title": "HR Management Course Course",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/human-resource-management-launchpad?utm_source=is_web_internship-menu-dropdown"
+    },
+    {
+      "title": "Courses\nOFFER",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/?utm_source=is_web_internshala-menu-dropdown1"
+    },
+    {
+      "title": "Artificial Intelligence and Machine Learning",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/artificial-intelligence-and-machine-learning-course/?utm_source=is_web_internshala-menu-dropdown-stt"
+    },
+    {
+      "title": "Full Stack Web Development with AI",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/web-development-course/?utm_source=is_web_internshala-menu-dropdown-stt"
+    },
+    {
+      "title": "Programming with Python with AI",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/python-course/?utm_source=is_web_internshala-menu-dropdown-stt"
+    },
+    {
+      "title": "Complete Digital Marketing with AI",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/digital-marketing-course/?utm_source=is_web_internshala-menu-dropdown-stt"
+    },
+    {
+      "title": "Machine Learning with AI",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/machine-learning-course/?utm_source=is_web_internshala-menu-dropdown-stt"
+    },
+    {
+      "title": "Advanced Excel with AI",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/excel-course/?utm_source=is_web_internshala-menu-dropdown-stt"
+    },
+    {
+      "title": "AutoCAD with AI",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/autocad-course/?utm_source=is_web_internshala-menu-dropdown-stt"
+    },
+    {
+      "title": "Data Science with AI",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/data-science-beginner-course/?utm_source=is_web_internshala-menu-dropdown-stt"
+    },
+    {
+      "title": "Programming with C and C++ with AI",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/c-plus-plus-course/?utm_source=is_web_internshala-menu-dropdown-stt"
+    },
+    {
+      "title": "View 70+ more courses",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/short-term-courses/?utm_source=is_web_header_view_all"
+    },
+    {
+      "title": "Web Development Course",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/web-developer-launchpad/?utm_source=is_web_internshala-menu-dropdown-launchpads"
+    },
+    {
+      "title": "Data Science Course",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/data-science-launchpad/?utm_source=is_web_internshala-menu-dropdown-launchpads"
+    },
+    {
+      "title": "Digital Marketing Course",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/digital-marketing-launchpad/?utm_source=is_web_internshala-menu-dropdown-launchpads"
+    },
+    {
+      "title": "HR Management Course",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/human-resource-management-launchpad/?utm_source=is_web_internshala-menu-dropdown-launchpads"
+    },
+    {
+      "title": "Online MBA",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/onlinedegrees/online-mba/?utm_source=is_web_internshala-menu-dropdown-od&utm_campaign=online_degrees"
+    },
+    {
+      "title": "Online BCA",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/onlinedegrees/online-bca/?utm_source=is_web_internshala-menu-dropdown-od&utm_campaign=online_degrees"
+    },
+    {
+      "title": "Online MCA",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/onlinedegrees/online-mca/?utm_source=is_web_internshala-menu-dropdown-od&utm_campaign=online_degrees"
+    },
+    {
+      "title": "Online BBA",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/onlinedegrees/online-bba/?utm_source=is_web_internshala-menu-dropdown-od&utm_campaign=online_degrees"
+    },
+    {
+      "title": "Online MA",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/onlinedegrees/online-ma/?utm_source=is_web_internshala-menu-dropdown-od&utm_campaign=online_degrees"
+    },
+    {
+      "title": "Online MSc",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/onlinedegrees/online-msc/?utm_source=is_web_internshala-menu-dropdown-od&utm_campaign=online_degrees"
+    },
+    {
+      "title": "View all",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/onlinedegrees?utm_source=is_web_header_view_all"
+    },
+    {
+      "title": "USA",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/study_abroad/usa/all/all/?utm_source=is_web_internshala-menu-dropdown-sa#program-section"
+    },
+    {
+      "title": "UK",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/study_abroad/uk/all/all/?utm_source=is_web_internshala-menu-dropdown-sa#program-section"
+    },
+    {
+      "title": "Canada",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/study_abroad/canada/all/all/?utm_source=is_web_internshala-menu-dropdown-sa#program-section"
+    },
+    {
+      "title": "Germany",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/study_abroad/germany/all/all/?utm_source=is_web_internshala-menu-dropdown-sa#program-section"
+    },
+    {
+      "title": "Australia",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/study_abroad/australia/all/all/?utm_source=is_web_internshala-menu-dropdown-sa#program-section"
+    },
+    {
+      "title": "France",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/study_abroad/france/all/all/?utm_source=is_web_internshala-menu-dropdown-sa#program-section"
+    },
+    {
+      "title": "UAE",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/study_abroad/uae/all/all/?utm_source=is_web_internshala-menu-dropdown-sa#program-section"
+    },
+    {
+      "title": "View all",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/study_abroad?utm_source=is_web_header_view_all"
+    },
+    {
+      "title": "Jobs",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/?utm_source=is_header"
+    },
+    {
+      "title": "Work from home",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/work-from-home/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Jobs in Bangalore",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/jobs-in-bangalore/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Jobs in Delhi",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/jobs-in-delhi/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Jobs in Hyderabad",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/jobs-in-hyderabad/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Jobs in Gurgaon",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/jobs-in-gurgaon/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Jobs in Kolkata",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/jobs-in-kolkata/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Jobs in Mumbai",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/jobs-in-mumbai/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Jobs in Pune",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/jobs-in-pune/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Jobs in Chennai",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/jobs-in-chennai/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Jobs in Noida",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/jobs-in-noida/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Jobs in Jaipur",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/jobs-in-jaipur/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Jobs in Coimbatore",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/jobs-in-coimbatore/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Jobs in Lucknow",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/jobs-in-lucknow/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "View all jobs",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Data Entry Jobs",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/data-entry-jobs/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Content Writing Jobs",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/content-writing-jobs/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Digital Marketing Jobs",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/digital-marketing-jobs/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Data Science Jobs",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/data-science-jobs/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Cyber Security Jobs",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/cyber-security-jobs/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Pharma Jobs",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/pharmaceutical-jobs/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Teaching Jobs",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/teaching-jobs/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "HR Jobs",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/hr-jobs/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "MBA Jobs",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/mba-jobs/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Graphic Design Jobs",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/graphic-design-jobs/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Part Time Jobs",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/part-time-jobs/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Jobs for Women",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs-for-women/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "WFH Jobs for Women",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs-for-women/work-from-home/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Part Time Jobs for Women",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs-for-women/part-time-jobs/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "View all jobs",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Work from home",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/fresher-jobs/work-from-home/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Fresher Jobs in Bangalore",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/fresher-jobs/jobs-in-bangalore/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Fresher Jobs in Delhi",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/fresher-jobs/jobs-in-delhi/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Fresher Jobs in Hyderabad",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/fresher-jobs/jobs-in-hyderabad/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Fresher Jobs in Chennai",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/fresher-jobs/jobs-in-chennai/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Fresher Jobs in Pune",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/fresher-jobs/jobs-in-pune/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "MBA Fresher Jobs",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/fresher-jobs/mba-jobs/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "HR Fresher Jobs",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/fresher-jobs/hr-jobs/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Civil Fresher Jobs",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/fresher-jobs/civil-jobs/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Digital Marketing Fresher Jobs",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/fresher-jobs/digital-marketing-jobs/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Part Time Fresher Jobs",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/fresher-jobs/part-time-jobs/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "View all fresher jobs",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/fresher-jobs/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Jobs by Category",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs-by-category/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Jobs by Location",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs-by-location/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Jobs by Designation",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs-by-designation/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Jobs by Skill",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs-by-skill/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Jobs by Company",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs-at-company/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "WFH Job Types",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/work-from-home-jobs-by-category/?utm_source=is_menu_dropdown"
+    },
+    {
+      "title": "Web Development Course Course",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/web-developer-launchpad?utm_source=is_web_job-menu-dropdown"
+    },
+    {
+      "title": "Data Science Course Course",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/data-science-launchpad?utm_source=is_web_job-menu-dropdown"
+    },
+    {
+      "title": "Digital Marketing Course Course",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/digital-marketing-launchpad?utm_source=is_web_job-menu-dropdown"
+    },
+    {
+      "title": "HR Management Course Course",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/human-resource-management-launchpad?utm_source=is_web_job-menu-dropdown"
+    },
+    {
+      "title": "Register as a student",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/registration/student"
+    },
+    {
+      "title": "Register as an employer",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/employer/"
+    },
+    {
+      "title": "Terms and Conditions",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/terms#student"
+    },
+    {
+      "title": "Sign up with Google",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/login/get_google/?utm_source=modal_signup_search"
+    },
+    {
+      "title": "Sign up with Email",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/registration/student/?utm_source=modal_signup_search"
+    },
+    {
+      "title": "Home",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/"
+    },
+    {
+      "title": "Jobs",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/jobs/"
+    },
+    {
+      "title": "Save this search as alert",
+      "company": null,
+      "location": "Location",
+      "link": "https://internshala.com/registration/student"
+    },
+    {
+      "title": "Get hired faster\n•  Promoted\nOnline Course with Placement Assistance\nUpskill & stand out as top applicant\nGet priority access to top opportunities\nRole specific Unlimited mock AI interviews\nApply now",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/#career-launchpad-courses?utm_source=is_web_native_ad_job_top_launchpads"
+    },
+    {
+      "title": "Business Relations Executive",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/business-relations-executive-job-in-hyderabad-at-stmarys-university1781842043"
+    },
+    {
+      "title": "Chartered Accountant (CA)",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/chartered-accountant-ca-job-in-navi-mumbai-at-aurum-group1780064600"
+    },
+    {
+      "title": "AWS Cloud Consultant - Sales",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-aws-cloud-consultant-sales-job-in-noida-at-mist-avinya-technologies1781853515"
+    },
+    {
+      "title": "Relationship Manager (B2B Field Sales) - Bangalore",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-relationship-manager-b2b-sales-job-in-bangalore-at-zopper1780296869"
+    },
+    {
+      "title": "Finance Executive",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/finance-executive-job-in-hyderabad-at-stmarys-university1781528652"
+    },
+    {
+      "title": "Continue with Google",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/login/get_google?utm_source=register_nudge_search&referral=register_nudge_search"
+    },
+    {
+      "title": "Continue with Email",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/registration/student?utm_source=register_nudge_search&referral=register_nudge_search"
+    },
+    {
+      "title": "T&C.",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/terms"
+    },
+    {
+      "title": "Administration Executive",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/administration-executive-job-in-hyderabad-at-stmarys-university1781584047"
+    },
+    {
+      "title": "Sales Associate",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-remote-sales-associate-job-at-hidani-tech1781766099"
+    },
+    {
+      "title": "Sales Associate",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-sales-associate-job-in-multiple-locations-at-lenskart1782208023"
+    },
+    {
+      "title": "Relationship Manager (B2B Field Sales) - Mumbai",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-relationship-manager-b2b-sales-job-in-mumbai-at-zopper1780296172"
+    },
+    {
+      "title": "Business Development Associate",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/remote-business-development-associate-job-at-hidani-tech1781086596"
+    },
+    {
+      "title": "Get hired faster\n•  Promoted\nOnline Course with Placement Assistance\nUpskill & stand out as top applicant\nGet priority access to top opportunities\nRole specific Unlimited mock AI interviews\nApply now",
+      "company": null,
+      "location": null,
+      "link": "https://trainings.internshala.com/#career-launchpad-courses?utm_source=is_web_native_ad_job_repeat_launchpads"
+    },
+    {
+      "title": "Managed Service Consultant",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/managed-service-consultant-job-in-mumbai-at-team-management-services-tms1781499489"
+    },
+    {
+      "title": "Inside Sales Associate - Bangalore",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/inside-sales-associate-bangalore-job-in-bangalore-at-medibuddy1780155694"
+    },
+    {
+      "title": "Corporate Sales Associate",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-corporate-sales-associate-job-in-bangalore-at-moneywise-capital-services-private-limited1781874809"
+    },
+    {
+      "title": "IT Recruiter",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/it-recruiter-job-in-mumbai-at-hms-coach1782208443"
+    },
+    {
+      "title": "Telecaller",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-telecaller-job-in-mumbai-at-titan-company-limited1780300760"
+    },
+    {
+      "title": "Business Development Executive",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-business-development-executive-job-in-multiple-locations-at-oyo-rooms1780309968"
+    },
+    {
+      "title": "Online Data Analyst - Odia Speaker",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-remote-part-time-online-data-analyst-odia-speaker-job-at-telus-international-ai-inc1782192617"
+    },
+    {
+      "title": "Online Data Analyst - Kannada Speaker",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-remote-part-time-online-data-analyst-kannada-speaker-job-at-telus-international-ai-inc1782192305"
+    },
+    {
+      "title": "Online Data Analyst - Bengali Speaker",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-remote-part-time-online-data-analyst-bengali-speaker-job-at-telus-international-ai-inc1782192568"
+    },
+    {
+      "title": "Punjabi-Speaking Online Data Analyst",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-remote-part-time-punjabi-speaking-online-data-analyst-job-at-telus-international-ai-inc1782125581"
+    },
+    {
+      "title": "Online Data Analyst - Urdu Speakers",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-remote-part-time-online-data-analyst-urdu-speakers-job-at-telus-international-ai-inc1780999893"
+    },
+    {
+      "title": "Malayalam Speaker - Online Data Analyst",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-remote-part-time-malayalam-speaker-online-data-analyst-job-at-telus-international-ai-inc1779943628"
+    },
+    {
+      "title": "Marathi Speaker - Online Data Analyst",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-remote-part-time-marathi-speaker-online-data-analyst-job-at-telus-international-ai-inc1779943649"
+    },
+    {
+      "title": "Gujarati Speaker - Online Data Analyst",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/remote-part-time-gujarati-speaker-online-data-analyst-job-at-telus-international-ai-inc1779943582"
+    },
+    {
+      "title": "Business Development Executive",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/business-development-executive-job-in-jaipur-at-standyou-data-info-labs-private-limited1781851761"
+    },
+    {
+      "title": "Coding Trainer - Stem",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/coding-trainer-stem-job-in-bangalore-at-orchids-international-school1782017516"
+    },
+    {
+      "title": "Video Editor",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/video-editor-job-in-ahmedabad-at-inobal1780923178"
+    },
+    {
+      "title": "Export Executive (MBA)",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/export-executive-mba-job-in-mumbai-at-aarti-pharmalabs-limited1780855268"
+    },
+    {
+      "title": "Associate Technical Support Engineer",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-associate-technical-support-engineer-job-in-bangalore-at-chargepoint-technologies1780859247"
+    },
+    {
+      "title": "Content Moderator – Spanish (Read & Write)",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-content-moderator--spanish-read-write-job-in-gurgaon-at-highspring1779698894"
+    },
+    {
+      "title": "Social Media Script Writer",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/social-media-script-writer-job-in-bangalore-at-bajaj-finserv1781692176"
+    },
+    {
+      "title": "Field Sales Executive",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-field-sales-executive-job-in-navi-mumbai-at-paytm-payments-services-limited1782124089"
+    },
+    {
+      "title": "Relationship Manager",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-relationship-manager-job-in-multiple-locations-at-windstreamin1779869120"
+    },
+    {
+      "title": "Soft Skills Trainer",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/soft-skills-trainer-job-in-multiple-locations-at-arihant-publications1780735015"
+    },
+    {
+      "title": "Accountant/Accounts Executive",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-accountant-accounts-executive-job-in-multiple-locations-at-manubhai-shah-llp1781672397"
+    },
+    {
+      "title": "Customer Service Associate",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-customer-service-associate-job-in-delhi-at-ets-india-private-limited1781760305"
+    },
+    {
+      "title": "Customer Acquisition Executive",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-customer-acquisition-executive-job-in-meerut-at-highspring1780561588"
+    },
+    {
+      "title": "Videographer",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/part-time-videographer-job-in-mysuru-at-fithub-academy1782199666"
+    },
+    {
+      "title": "Candidate Success Executive - TA/HR",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-candidate-success-executive-ta-hr-job-in-bangalore-at-ansr-global-private-limited1782215727"
+    },
+    {
+      "title": "Tellecaller",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/tellecaller-job-in-mumbai-at-the-guardians-real-estate-advisory-consulting1782201657"
+    },
+    {
+      "title": "Insurance Operations Associate - Bangalore",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-insurance-operations-associate-bangalore-job-in-bangalore-at-medibuddy1780674098"
+    },
+    {
+      "title": "Business Development Executive",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-business-development-executive-job-in-mumbai-at-orchids-international-school1780286187"
+    },
+    {
+      "title": "Staff Nurse",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-staff-nurse-job-in-multiple-locations-at-max-healthcare-institute-limited1781512944"
+    },
+    {
+      "title": "Accounts Executive",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/accounts-executive-job-in-multiple-locations-at-manubhai-shah-llp1781528339"
+    },
+    {
+      "title": "Business Development Executive",
+      "company": null,
+      "location": null,
+      "link": "https://internshala.com/job/detail/fresher-business-development-executive-job-in-lucknow-at-generali-central-life-insurance-company-limited1779777701"
+    }
+  ],
+  "siteErrors": []
+}

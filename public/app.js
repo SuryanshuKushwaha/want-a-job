@@ -10,6 +10,68 @@ function clearResults() {
   resultsEl.innerHTML = '';
 }
 
+function renderResults(json) {
+  clearResults();
+  if (json.results && json.results.length) {
+    const summary = document.createElement('div');
+    summary.className = 'empty';
+    summary.innerText = `Showing ${json.results.length} jobs from the selected sources.`;
+    resultsEl.appendChild(summary);
+
+    json.results.forEach((r, i) => {
+      const card = document.createElement('div');
+      card.className = 'job-card';
+      card.style.animationDelay = (i * 60) + 'ms';
+
+      const a = document.createElement('a');
+      a.href = r.link || '#';
+      a.target = '_blank';
+      a.className = 'job-title';
+      a.innerText = r.title || r.link || 'Job';
+
+      const meta = document.createElement('div');
+      meta.className = 'job-meta';
+      meta.innerText = `${r.company || 'Unknown'} — ${r.location || 'Unknown'}`;
+
+      let siteName = '';
+      try {
+        const u = new URL(r.link || '');
+        const host = u.hostname.replace(/^www\./, '');
+        const parts = host.split('.');
+        const label = parts.length > 1 ? parts[parts.length - 2] : parts[0];
+        siteName = label.charAt(0).toUpperCase() + label.slice(1);
+      } catch (e) { siteName = '' }
+      if (siteName) {
+        const siteEl = document.createElement('span');
+        siteEl.className = 'job-site';
+        siteEl.innerText = siteName;
+        meta.appendChild(document.createTextNode(' '));
+        meta.appendChild(siteEl);
+      }
+
+      card.appendChild(a);
+      card.appendChild(meta);
+
+      const btn = document.createElement('button');
+      btn.className = 'job-link-btn';
+      btn.type = 'button';
+      btn.innerText = 'Open';
+      btn.addEventListener('click', (ev) => {
+        ev.preventDefault();
+        try { window.open(r.link || '#', '_blank'); } catch (e) { location.href = r.link || '#'; }
+      });
+
+      card.appendChild(btn);
+      resultsEl.appendChild(card);
+    });
+  } else {
+    const msg = document.createElement('div');
+    msg.className = 'empty';
+    msg.innerText = json.siteErrors && json.siteErrors.length ? 'No results. See siteErrors in raw output.' : 'No results found.';
+    resultsEl.appendChild(msg);
+  }
+}
+
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const fd = new FormData(e.target);
@@ -33,60 +95,7 @@ form.addEventListener('submit', async (e) => {
     });
     const json = await res.json();
 
-    clearResults();
-    if (json.results && json.results.length) {
-      json.results.forEach((r, i) => {
-        const card = document.createElement('div');
-        card.className = 'job-card';
-        card.style.animationDelay = (i * 60) + 'ms';
-
-        const a = document.createElement('a');
-        a.href = r.link || '#';
-        a.target = '_blank';
-        a.className = 'job-title';
-        a.innerText = r.title || r.link || 'Job';
-
-        const meta = document.createElement('div');
-        meta.className = 'job-meta';
-        meta.innerText = `${r.company || 'Unknown'} — ${r.location || 'Unknown'}`;
-
-        let siteName = '';
-        try {
-          const u = new URL(r.link || '');
-          const host = u.hostname.replace(/^www\./, '');
-          const parts = host.split('.');
-          const label = parts.length > 1 ? parts[parts.length - 2] : parts[0];
-          siteName = label.charAt(0).toUpperCase() + label.slice(1);
-        } catch (e) { siteName = '' }
-        if (siteName) {
-          const siteEl = document.createElement('span');
-          siteEl.className = 'job-site';
-          siteEl.innerText = siteName;
-          meta.appendChild(document.createTextNode(' '));
-          meta.appendChild(siteEl);
-        }
-
-        card.appendChild(a);
-        card.appendChild(meta);
-
-        const btn = document.createElement('button');
-        btn.className = 'job-link-btn';
-        btn.type = 'button';
-        btn.innerText = 'Open';
-        btn.addEventListener('click', (ev) => {
-          ev.preventDefault();
-          try { window.open(r.link || '#', '_blank'); } catch (e) { location.href = r.link || '#'; }
-        });
-
-        card.appendChild(btn);
-        resultsEl.appendChild(card);
-      });
-    } else {
-      const msg = document.createElement('div');
-      msg.className = 'empty';
-      msg.innerText = json.siteErrors && json.siteErrors.length ? 'No results. See siteErrors in raw output.' : 'No results found.';
-      resultsEl.appendChild(msg);
-    }
+    renderResults(json);
   } catch (err) {
     clearResults();
     const errEl = document.createElement('div');
@@ -95,4 +104,12 @@ form.addEventListener('submit', async (e) => {
     resultsEl.appendChild(errEl);
     // error is shown in UI; do not expose raw JSON
   }
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  const roleInput = form.querySelector('input[name="role"]');
+  const locationInput = form.querySelector('input[name="location"]');
+  if (roleInput) roleInput.value = 'developer';
+  if (locationInput) locationInput.value = 'remote';
+  form.requestSubmit();
 });

@@ -11,19 +11,31 @@ function buildSearchUrl(params = {}) {
 async function scrape(page, siteUrl = 'https://internshala.com') {
   const items = await page.evaluate(() => {
     const results = [];
-    const selectors = ['.internship_list_item', '.single_internship', '.internship', '.internship_card'];
+    const selectors = ['.individual_internship', '.internship_list_item', '.single_internship', '.internship', '.internship_card'];
     let nodes = [];
     for (const sel of selectors) {
       nodes = Array.from(document.querySelectorAll(sel));
       if (nodes && nodes.length) break;
     }
 
+    function findInAncestors(node, selectors) {
+      let cur = node;
+      for (let i = 0; i < 4 && cur; i++) {
+        for (const sel of selectors) {
+          const found = cur.querySelector(sel);
+          if (found) return found;
+        }
+        cur = cur.parentElement;
+      }
+      return null;
+    }
+
     nodes.forEach(node => {
       try {
-        const anchor = node.querySelector('a') || node.querySelector('.heading a') || node.querySelector('h3 a');
-        const titleEl = node.querySelector('.heading') || node.querySelector('h3') || anchor;
-        const companyEl = node.querySelector('.company_name') || node.querySelector('.company') || node.querySelector('.internship_company');
-        const locationEl = node.querySelector('.location') || node.querySelector('.internship_location') || node.querySelector('.loc') || Array.from(node.querySelectorAll('[class]')).find(el => /\b(loc|location)\b/i.test(el.className)) || node.querySelector('[data-location]') || node.querySelector('[aria-label*="location"]');
+        const anchor = node.querySelector('.job-title-href') || node.querySelector('h2 a') || node.querySelector('a[href]');
+        const titleEl = node.querySelector('.job-title-href') || node.querySelector('h2') || node.querySelector('.generic_container') || anchor;
+        const companyEl = node.querySelector('.company-name') || node.querySelector('.company_name') || node.querySelector('.company') || findInAncestors(node, ['.company-name', '.company_name', '.company']);
+        const locationEl = node.querySelector('.row-1-item.locations a') || node.querySelector('.locations a') || node.querySelector('.location') || node.querySelector('.internship_location') || node.querySelector('.loc') || Array.from(node.querySelectorAll('[class]')).find(el => /\b(loc|location)\b/i.test(el.className)) || node.querySelector('[data-location]') || node.querySelector('[aria-label*="location"]') || findInAncestors(node, ['.row-1-item.locations a', '.locations a', '.location', '.internship_location']);
 
         const title = titleEl ? titleEl.innerText.trim() : (anchor ? anchor.innerText.trim() : null);
         const company = companyEl ? companyEl.innerText.trim() : null;

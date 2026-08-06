@@ -12,19 +12,31 @@ function buildSearchUrl(params = {}) {
 async function scrape(page, siteUrl = 'https://www.linkedin.com') {
   const items = await page.evaluate(() => {
     const results = [];
-    const selectors = ['.result-card', '.jobs-search-results__list-item', '.job-card-container', '.base-card'];
+    const selectors = ['.base-card', '.result-card', '.jobs-search-results__list-item', '.job-card-container'];
     let nodes = [];
     for (const sel of selectors) {
       nodes = Array.from(document.querySelectorAll(sel));
       if (nodes && nodes.length) break;
     }
 
+    function findInAncestors(node, selectors) {
+      let cur = node;
+      for (let i = 0; i < 4 && cur; i++) {
+        for (const sel of selectors) {
+          const found = cur.querySelector(sel);
+          if (found) return found;
+        }
+        cur = cur.parentElement;
+      }
+      return null;
+    }
+
     nodes.forEach(node => {
       try {
-        const anchor = node.querySelector('a') || node.querySelector('.result-card__full-card-link');
-        const titleEl = node.querySelector('.job-card-list__title') || node.querySelector('.result-card__title') || node.querySelector('h3') || anchor;
-        const companyEl = node.querySelector('.job-card-container__company-name') || node.querySelector('.result-card__subtitle') || node.querySelector('.base-search-card__subtitle');
-        const locationEl = node.querySelector('.job-card-container__metadata-item') || node.querySelector('.result-card__location') || node.querySelector('.job-result-card__location') || Array.from(node.querySelectorAll('[class]')).find(el => /\b(loc|location|place)\b/i.test(el.className)) || node.querySelector('[data-location]') || node.querySelector('[aria-label*="location"]');
+        const anchor = node.querySelector('a.base-card__full-link') || node.querySelector('a') || node.querySelector('.result-card__full-card-link');
+        const titleEl = node.querySelector('.job-card-list__title') || node.querySelector('h3') || anchor;
+        const companyEl = node.querySelector('.base-search-card__subtitle') || node.querySelector('.job-card-container__company-name') || node.querySelector('.result-card__subtitle') || findInAncestors(node, ['.base-search-card__subtitle', '.job-card-container__company-name', '.result-card__subtitle']);
+        const locationEl = node.querySelector('.job-search-card__location') || node.querySelector('.base-search-card__metadata') || node.querySelector('.result-card__location') || node.querySelector('.job-result-card__location') || Array.from(node.querySelectorAll('[class]')).find(el => /\b(loc|location|place)\b/i.test(el.className)) || node.querySelector('[data-location]') || node.querySelector('[aria-label*="location"]') || findInAncestors(node, ['.job-search-card__location', '.base-search-card__metadata', '.result-card__location']);
 
         const title = titleEl ? titleEl.innerText.trim() : (anchor ? anchor.innerText.trim() : null);
         const company = companyEl ? companyEl.innerText.trim() : null;

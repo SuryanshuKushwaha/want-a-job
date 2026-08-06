@@ -53,16 +53,42 @@ async function scrape(page, siteUrl = 'https://www.indeed.com') {
       if (nodes && nodes.length) break;
     }
 
+    function findInAncestors(node, selectors) {
+      let cur = node;
+      for (let i = 0; i < 4 && cur; i++) {
+        for (const sel of selectors) {
+          const found = cur.querySelector(sel);
+          if (found) return found;
+        }
+        cur = cur.parentElement;
+      }
+      return null;
+    }
+
     nodes.forEach(node => {
       try {
         const anchor = node.tagName === 'A' ? node : (node.querySelector('a') || node.querySelector('h2 a') || node.querySelector('a[href]'));
         const titleEl = node.querySelector('h2 span') || node.querySelector('h2') || anchor;
-        const companyEl = node.querySelector('.companyName') || node.querySelector('.company') || node.querySelector('.turnstileLink') || node.querySelector('.company a');
-        const locationEl = node.querySelector('.companyLocation') || node.querySelector('.location') || node.querySelector('[data-rc-loc]');
+        const companyLocationEl = node.querySelector('.company_location') || node.querySelector('.companyLocation');
+        const companyEl = node.querySelector('.companyName') || node.querySelector('.company') || node.querySelector('.turnstileLink') || node.querySelector('.company a') || findInAncestors(node, ['.companyName', '.company', '.turnstileLink']);
+        const locationEl = node.querySelector('[data-rc-loc]') || node.querySelector('.location') || findInAncestors(node, ['.companyLocation', '.location', '[data-rc-loc]']);
 
         const title = titleEl ? titleEl.innerText.trim() : (anchor ? anchor.innerText.trim() : null);
-        const company = companyEl ? companyEl.innerText.trim() : null;
-        const location = locationEl ? locationEl.innerText.trim() : null;
+        let company = null;
+        let location = null;
+
+        if (companyLocationEl) {
+          const lines = companyLocationEl.innerText.trim().split(/\r?\n/).map(p => p.trim()).filter(Boolean);
+          if (lines.length === 1) {
+            company = lines[0];
+          } else if (lines.length >= 2) {
+            company = lines[0];
+            location = lines.slice(1).join(', ');
+          }
+        }
+
+        if (!company && companyEl) company = companyEl.innerText.trim();
+        if (!location && locationEl) location = locationEl.innerText.trim();
         const href = anchor ? (anchor.getAttribute('href') || null) : null;
 
         if (title) {

@@ -1,6 +1,10 @@
-const puppeteer = require('puppeteer');
+const puppeteerExtra = require('puppeteer-extra');
+const StealthPlugin = require('puppeteer-extra-plugin-stealth');
+puppeteerExtra.use(StealthPlugin());
+const puppeteer = puppeteerExtra;
 const { URL } = require('url');
 const fs = require('fs').promises;
+const fsSync = require('fs');
 const path = require('path');
 
 // Map hostname keywords to local site modules
@@ -37,10 +41,27 @@ async function scrapeSite(browser, siteUrl, params) {
       await page.setViewport({ width: 1200, height: 900 });
       await page.setExtraHTTPHeaders({ 'Accept-Language': 'en-US,en;q=0.9' });
       page.setDefaultNavigationTimeout(60000);
+
+      // Evasion: remove webdriver flag and expose common navigator properties
+      await page.evaluateOnNewDocument(() => {
+        try {
+          Object.defineProperty(navigator, 'webdriver', { get: () => false });
+        } catch (e) {}
+        try {
+          window.navigator.languages = ['en-US', 'en'];
+        } catch (e) {}
+        try {
+          Object.defineProperty(navigator, 'plugins', { get: () => [1, 2, 3] });
+        } catch (e) {}
+      });
     } catch (e) {}
 
     const url = mod.buildSearchUrl(params);
-    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+    // Wait for network to be mostly idle to allow client-side rendering
+    await page.goto(url, { waitUntil: 'networkidle2', timeout: 60000 });
+
+    // extra wait to allow lazy-loaded content and client-side rendering
+    try { await page.waitForTimeout(1500); } catch (e) {}
 
     // attempt to load lazy content by scrolling
     try { await autoScroll(page); } catch (e) {}
@@ -82,15 +103,24 @@ async function genericScrape(page, siteUrl) {
     const candidates = Array.from(anchors).slice(0, 200);
     for (const a of candidates) {
       try {
+        const href = (a.getAttribute('href') || '').trim();
         const title = (a.innerText || '').trim();
+        // Filter out non-job links: prefer anchors that contain job-like patterns
+        const hrefLower = href.toLowerCase();
+        const looksLikeJob = hrefLower.includes('job-listings') || hrefLower.includes('/job-') || hrefLower.includes('/jobs/') || /\/jobs\b/.test(hrefLower) || /job\-listings/.test(hrefLower) || title.length > 30;
+        if (!href || !looksLikeJob) continue;
+
         // try to find surrounding company/location text
         const parent = a.closest('div') || a.parentElement || document.body;
-        const companyEl = parent.querySelector('.company, .company-name, .org, .companyName') || null;
-        const locationEl = parent.querySelector('.location, .loc, .job-location') || null;
+        const companyEl = parent.querySelector('.company, .company-name, .org, .companyName, .companyInfo, .company_info') || null;
+        const locationEl = parent.querySelector('.location, .loc, .job-location, .companyLocation') || null;
         const company = companyEl ? (companyEl.innerText || '').trim() : null;
         const location = locationEl ? (locationEl.innerText || '').trim() : null;
-        const href = a.getAttribute('href') || null;
-        if (title) results.push({ title, company, location, href });
+
+        // normalize title: sometimes anchors are company links; skip those with very short text
+        if (!title || title.length < 3) continue;
+
+        results.push({ title, company, location, href });
       } catch (e) { /* ignore element errors */ }
     }
 
@@ -126,13 +156,12 @@ async function autoScroll(page) {
 
 async function scrape(params) {
   const defaultSites = [
-    'https://internshala.com',
     'https://www.naukri.com',
     'https://www.linkedin.com/jobs',
-    'https://www.workindia.in'
+    'https://www.indeed.com'
   ];
   // Whitelist - only these hostnames will be scraped
-  const ALLOWED_HOST_KEYS = ['indeed.', 'internshala', 'naukri.', 'linkedin.com', 'workindia.'];
+  const ALLOWED_HOST_KEYS = ['naukri.', 'linkedin.com', 'indeed.'];
 
   // Helper to normalize an entry into a full URL string when possible
   function normalizeToUrlString(s) {
@@ -172,11 +201,30 @@ async function scrape(params) {
   if (!sites.length) {
     return { results: [], siteErrors: [{ error: 'No allowed sites selected. Allowed hosts: ' + ALLOWED_HOST_KEYS.join(', '), rejected }], savedFile: null };
   }
+  const chromeUserDataDir = process.env.CHROME_USER_DATA_DIR || 'C:\\Users\\surya\\AppData\\Local\\Google\\Chrome\\User Data';
   const launchOpts = {
     headless: true,
-    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+      '--disable-blink-features=AutomationControlled',
+      '--disable-dev-shm-usage',
+      `--user-data-dir=${chromeUserDataDir}`,
+      '--profile-directory=Default'
+    ],
   };
   if (process.env.PUPPETEER_EXECUTABLE_PATH) launchOpts.executablePath = process.env.PUPPETEER_EXECUTABLE_PATH;
+  else {
+    // try common Windows Chrome paths
+    const candidates = [
+      'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+      'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe',
+      'C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe'
+    ];
+    for (const c of candidates) {
+      try { if (fsSync.existsSync(c)) { launchOpts.executablePath = c; break; } } catch (e) {}
+    }
+  }
   const browser = await puppeteer.launch(launchOpts);
 
   // simple concurrency pool (avoid p-limit ESM warnings)

@@ -1,7 +1,4 @@
-const puppeteerExtra = require('puppeteer-extra');
-const StealthPlugin = require('puppeteer-extra-plugin-stealth');
-puppeteerExtra.use(StealthPlugin());
-const puppeteer = puppeteerExtra;
+const puppeteer = require('puppeteer');
 const { URL } = require('url');
 const fs = require('fs').promises;
 const fsSync = require('fs');
@@ -201,7 +198,8 @@ async function scrape(params) {
   if (!sites.length) {
     return { results: [], siteErrors: [{ error: 'No allowed sites selected. Allowed hosts: ' + ALLOWED_HOST_KEYS.join(', '), rejected }], savedFile: null };
   }
-  const chromeUserDataDir = process.env.CHROME_USER_DATA_DIR || 'C:\\Users\\surya\\AppData\\Local\\Google\\Chrome\\User Data';
+  const chromeUserDataDir = process.env.CHROME_USER_DATA_DIR || path.join(__dirname, '..', 'data', 'chrome-profile');
+  try { fsSync.mkdirSync(chromeUserDataDir, { recursive: true }); } catch (e) {}
   const launchOpts = {
     headless: true,
     args: [
